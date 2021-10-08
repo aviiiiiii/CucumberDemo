@@ -22,6 +22,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded0.png", "Filling the form");
+formatter.afterstep({
+  "status": "passed"
+});
 formatter.step({
   "name": "User enters the all the details",
   "keyword": "When "
@@ -30,6 +34,10 @@ formatter.match({
   "location": "stepDefinitions.formSteps.user_enters_the_all_the_details()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded1.png", "Filling the form");
+formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
@@ -42,6 +50,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded2.png", "Filling the form");
+formatter.afterstep({
+  "status": "passed"
+});
 formatter.step({
   "name": "User receives a success message",
   "keyword": "Then "
@@ -50,6 +62,10 @@ formatter.match({
   "location": "stepDefinitions.formSteps.user_receives_a_success_message()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded3.png", "Filling the form");
+formatter.afterstep({
   "status": "passed"
 });
 formatter.after({

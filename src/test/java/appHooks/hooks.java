@@ -24,8 +24,14 @@ public class hooks {
         return driver;
     }
 
+    @AfterStep
+    public void addScreenShot(Scenario scenario){
+        String scenarioName=scenario.getName();
+        final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+        scenario.attach(screenshot,"image/png",scenarioName);
+    }
 
-    @After
+    @After(order = 0)
     public void closeBrowser() {
         System.out.println("Inside hooks class After tag");
         driver.close();

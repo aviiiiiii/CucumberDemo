@@ -31,7 +31,7 @@ public class formSteps {
         form.enter_password("12345");
         form.select_gender(1);
         form.select_Employed();
-        form.enter_dob("13-Nov-1999");
+        form.enter_dob("13111999");
         System.out.println("Data has been successfully entered");
     }
 
@@ -43,6 +43,7 @@ public class formSteps {
 
     @Then("User receives a success message")
     public void user_receives_a_success_message() {
+
         System.out.println(form.getTexT());
 
 

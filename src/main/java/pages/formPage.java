@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 public class formPage {
 
     WebDriver driver;
+    JavascriptExecutor js;
+
+
 
     @FindBy(name = "name") WebElement nameBox;
     @FindBy(name = "email") WebElement emailBox;
@@ -21,6 +25,7 @@ public class formPage {
 
     public formPage(WebDriver driver){
         this.driver=driver;
+        js = (JavascriptExecutor) driver;
         PageFactory.initElements(driver,this);
     }
 
@@ -55,6 +60,7 @@ public class formPage {
     }
 
     public  String getTexT(){
+        js.executeScript("arguments[0].scrollIntoView();", successMsg);
         return successMsg.getText();
     }
 
