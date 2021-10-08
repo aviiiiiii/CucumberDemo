@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-08T04:46:20.198Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4450138200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Filling the form",
+        "description": "",
+        "id": "form;filling-the-form",
+        "after": [
+          {
+            "result": {
+              "duration": 3057792400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1472918400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is in the protoCommerce page",
+            "match": {
+              "location": "stepDefinitions.formSteps.user_is_in_the_protoCommerce_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 714091200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User enters the all the details",
+            "match": {
+              "location": "stepDefinitions.formSteps.user_enters_the_all_the_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73802900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks the Submit button",
+            "match": {
+              "location": "stepDefinitions.formSteps.user_clicks_the_Submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35919400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User receives a success message",
+            "match": {
+              "location": "stepDefinitions.formSteps.user_receives_a_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Form",
+    "description": "",
+    "id": "form",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/form.feature",
+    "tags": []
+  }
+]
